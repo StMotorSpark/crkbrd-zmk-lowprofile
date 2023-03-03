@@ -62,7 +62,7 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp  ESC  &trans  &trans  &trans  &trans  &trans   &mwh SCROLL_UP &mwh SCROLL_DOWN  &trans &trans &trans &trans
-   &kp LCTRL &trans &trans &trans &trans &kp HOME    &kp END   MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP        &mmv MOVE_RIGHT &trans &trans
+   &kp LCTRL &trans &trans &trans &kp HOME    &kp END   &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP        &mmv MOVE_RIGHT &trans &trans
    &kp LSHFT &trans    &trans  &trans    &trans    &trans      &kp LEFT &kp DOWN &kp UP &kp RIGHT   &trans &trans
                                    &kp LGUI &tog 3 &kp SPACE   &mkp LCLK &mkp RCLK &kp RALT
                         >;
