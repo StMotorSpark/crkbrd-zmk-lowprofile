@@ -2,11 +2,11 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: nvhung9:main
-      url-base: https://github.com/ftc
+    - name: stmts
+      url-base: https://github.com/StMotorSpark/
   projects:
     - name: zmk
-      remote: nvhung9:main
+      remote: stms
       revision: mouse-ftc
       import: app/west.yml
   self:
