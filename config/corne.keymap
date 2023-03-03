@@ -61,10 +61,24 @@
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  [  |  ]  |  \  |  ~   | // TODO: Fix this row when &mkp is committed
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp  ESC  &trans  &trans  &trans  &trans  &trans   &mwh SCROLL_UP &mmv MOVE_VERT(1800) &mwh SCROLL_DOWN &trans &trans &trans
-   &kp LCTRL &trans &trans &trans &kp HOME    &kp END   &mmv MOVE_HOR(-1800) &mmv MOVE_VERT(-1800) &mmv MOVE_HOR(1800) &trans &trans &trans
+   &kp  ESC  &trans  &trans  &trans  &trans  &trans   &mwh SCROLL_UP &mmv MOVE_VERT(-1600) &mwh SCROLL_DOWN &trans &trans &trans
+   &kp LCTRL &trans &trans &trans &kp HOME    &kp END   &mmv MOVE_HOR(-1600) &mmv MOVE_VERT(1600) &mmv MOVE_HOR(1600) &trans &trans &trans
    &kp LSHFT &trans    &trans  &trans    &kp C &kp V      &kp LEFT &kp DOWN &kp UP &kp RIGHT   &trans &trans
                                    &kp LGUI &tog 3 &kp SPACE   &mkp LCLK &mkp RCLK &kp RALT
+                        >;
+                };
+
+                mouse_layer2 {
+// -----------------------------------------------------------------------------------------
+// |  ESC |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+// | CTRL |     |     |     |     |     |   |  -  |  =  |  {  |  }  | "|" |  `   |
+// | SHFT |     |     |     |     |     |   |  _  |  +  |  [  |  ]  |  \  |  ~   | // TODO: Fix this row when &mkp is committed
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &kp  ESC  &trans  &trans  &trans  &trans  &trans   &mwh SCROLL_UP &mmv MOVE_UP &mwh SCROLL_DOWN &trans &trans &trans
+   &kp LCTRL &trans &trans &trans &kp HOME    &kp END   &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans &trans &trans
+   &kp LSHFT &trans    &trans  &trans    &kp C &kp V      &kp LEFT &kp DOWN &kp UP &kp RIGHT   &trans &trans
+                                   &kp LGUI &tog 3 &mo 4   &mkp LCLK &mkp RCLK &kp RALT
                         >;
                 };
         };
