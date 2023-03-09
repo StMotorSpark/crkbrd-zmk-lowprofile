@@ -10,6 +10,36 @@
 #include <dt-bindings/zmk/mouse.h>
 
 / {
+         behaviors {
+                td0: tap_dance_0 {
+                compatible = "zmk,behavior-tap-dance";
+                label = "TAP_DANCE_MOUSE_UP";
+                #binding-cells = <0>;
+                tapping-term-ms = <200>;
+                bindings = <&mmv MOVE_VERT(-1600)>, <&mmv MOVE_VERT(-2100)>;
+                };
+                td1: tap_dance_1 {
+                compatible = "zmk,behavior-tap-dance";
+                label = "TAP_DANCE_MOUSE_DOWN";
+                #binding-cells = <0>;
+                tapping-term-ms = <200>;
+                bindings = <&mmv MOVE_VERT(1600)>, <&mmv MOVE_VERT(2100)>;
+                };
+                td2: tap_dance_2 {
+                compatible = "zmk,behavior-tap-dance";
+                label = "TAP_DANCE_MOUSE_LEFT";
+                #binding-cells = <0>;
+                tapping-term-ms = <200>;
+                bindings = <&mmv MOVE_HOR(-1600)>, <&mmv MOVE_HOR(-2100)>;
+                };
+                td3: tap_dance_3 {
+                compatible = "zmk,behavior-tap-dance";
+                label = "TAP_DANCE_MOUSE_RIGHT";
+                #binding-cells = <0>;
+                tapping-term-ms = <200>;
+                bindings = <&mmv MOVE_HOR(1600)>, <&mmv MOVE_HOR(2100)>;
+                };
+        };
         keymap {
                 compatible = "zmk,keymap";
 
@@ -61,8 +91,8 @@
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  [  |  ]  |  \  |  ~   | // TODO: Fix this row when &mkp is committed
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp  ESC  &trans  &trans  &trans  &trans  &trans   &mwh SCROLL_UP &mmv MOVE_VERT(-1600) &mwh SCROLL_DOWN &trans &trans &trans
-   &kp LCTRL &trans &trans &trans &kp HOME    &kp END   &mmv MOVE_HOR(-1600) &mmv MOVE_VERT(1600) &mmv MOVE_HOR(1600) &trans &trans &trans
+   &kp  ESC  &trans  &trans  &trans  &trans  &trans   &mwh SCROLL_UP &td0 &mwh SCROLL_DOWN &trans &trans &trans
+   &kp LCTRL &trans &trans &trans &kp HOME    &kp END   &mmv &td2 &td1 &td3 &trans &trans &trans
    &kp LSHFT &trans    &trans  &trans    &kp C &kp V      &kp LEFT &kp DOWN &kp UP &kp RIGHT   &trans &trans
                                    &kp LGUI &tog 3 &mo 4   &mkp LCLK &mkp RCLK &kp RALT
                         >;
