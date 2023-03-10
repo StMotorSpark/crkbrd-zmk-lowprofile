@@ -92,7 +92,7 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp  ESC  &trans  &trans  &trans  &trans  &trans   &mwh SCROLL_UP &td0 &mwh SCROLL_DOWN &trans &trans &trans
-   &kp LCTRL &trans &trans &trans &kp HOME    &kp END   &mmv &td2 &td1 &td3 &trans &trans &trans
+   &kp LCTRL &trans &trans &trans &kp HOME    &kp END   &td2 &td1 &td3 &trans &trans &trans
    &kp LSHFT &trans    &trans  &trans    &kp C &kp V      &kp LEFT &kp DOWN &kp UP &kp RIGHT   &trans &trans
                                    &kp LGUI &tog 3 &mo 4   &mkp LCLK &mkp RCLK &kp RALT
                         >;
