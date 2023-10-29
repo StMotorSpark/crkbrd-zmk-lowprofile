@@ -1,0 +1,13 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: StMotorSpark:mouse-niceview-stms
+      url-base: https://github.com/StMotorSpark
+  projects:
+    - name: zmk
+      remote: StMotorSpark:mouse-niceview-stms
+      revision: mouse-niceview-stms
+      import: app/west.yml
+  self:
+    path: config
