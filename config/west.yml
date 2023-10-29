@@ -3,7 +3,7 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: StMotorSpark:mouse-niceview-stms
-      url-base: https://github.com/StMotorSpark
+      url-base: https://github.com/StMotorSpark/zmk.git
   projects:
     - name: zmk
       remote: StMotorSpark:mouse-niceview-stms
