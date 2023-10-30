@@ -10,36 +10,6 @@
 #include <dt-bindings/zmk/mouse.h>
 
 / {
-         behaviors {
-                td0: tap_dance_0 {
-                compatible = "zmk,behavior-tap-dance";
-                label = "TAP_DANCE_MOUSE_UP";
-                #binding-cells = <0>;
-                tapping-term-ms = <200>;
-                bindings = <&mmv MOVE_VERT(-1600)>, <&mmv MOVE_VERT(-2100)>;
-                };
-                td1: tap_dance_1 {
-                compatible = "zmk,behavior-tap-dance";
-                label = "TAP_DANCE_MOUSE_DOWN";
-                #binding-cells = <0>;
-                tapping-term-ms = <200>;
-                bindings = <&mmv MOVE_VERT(1600)>, <&mmv MOVE_VERT(2100)>;
-                };
-                td2: tap_dance_2 {
-                compatible = "zmk,behavior-tap-dance";
-                label = "TAP_DANCE_MOUSE_LEFT";
-                #binding-cells = <0>;
-                tapping-term-ms = <200>;
-                bindings = <&mmv MOVE_HOR(-1600)>, <&mmv MOVE_HOR(-2100)>;
-                };
-                td3: tap_dance_3 {
-                compatible = "zmk,behavior-tap-dance";
-                label = "TAP_DANCE_MOUSE_RIGHT";
-                #binding-cells = <0>;
-                tapping-term-ms = <200>;
-                bindings = <&mmv MOVE_HOR(1600)>, <&mmv MOVE_HOR(2100)>;
-                };
-        };
         keymap {
                 compatible = "zmk,keymap";
 
